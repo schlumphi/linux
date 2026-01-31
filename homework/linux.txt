@@ -1,0 +1,62 @@
+cat selected.txt commands.txt 
+579 processes.txt
+233:nvidia-+    1297  0.0  0.0   3328  1920 ?        Ss   15:18   0:00 /usr/bin/nvidia-persistenced --user nvidia-persistenced --no-persistence-mode --verbose
+240:root        1546  0.0  0.0 114780 22880 ?        Ssl  15:18   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+241:root        1557  0.0  0.1 2542956 49236 ?       Ssl  15:18   0:03 /usr/bin/containerd
+246:root        1868  0.0  0.2 3157384 79772 ?       Ssl  15:18   0:03 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+252:root        2504  0.0  0.0 1239212 14312 ?       Sl   15:18   0:00 /usr/bin/containerd-shim-runc-v2 -namespace moby -id e0611043538dcb0594332826506082cc8a5bc6180ce572abc6860d1b87533d9f -address /run/containerd/containerd.sock
+253:root        2505  0.0  0.0 1238892 14216 ?       Sl   15:18   0:01 /usr/bin/containerd-shim-runc-v2 -namespace moby -id 7f917234cbcf542fe1108d81dd2c6b9919f67573f3cb274ed10f9aa938ce2107 -address /run/containerd/containerd.sock
+254:root        2551  0.0  0.0   7460  3520 ?        Ss   15:18   0:00 /bin/bash /assets/init-container
+255:root        2553  0.0  0.0    224     0 ?        Ss   15:18   0:00 /usr/bin/dumb-init /entrypoint run --user=gitlab-runner --working-directory=/home/gitlab-runner
+257:root        2652  0.0  0.0 1746984 4480 ?        Sl   15:18   0:00 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 2222 -container-ip 172.18.0.2 -container-port 22 -use-listen-fd
+258:root        2658  0.0  0.0 1673252 4640 ?        Sl   15:18   0:00 /usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 2222 -container-ip 172.18.0.2 -container-port 22 -use-listen-fd
+259:root        2667  0.0  0.0 1746984 4640 ?        Sl   15:18   0:00 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8080 -container-ip 172.18.0.2 -container-port 80 -use-listen-fd
+260:root        2674  0.0  0.0 1746984 4640 ?        Sl   15:18   0:00 /usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 8080 -container-ip 172.18.0.2 -container-port 80 -use-listen-fd
+261:root        2682  0.0  0.0 1746728 4480 ?        Sl   15:18   0:00 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8443 -container-ip 172.18.0.2 -container-port 443 -use-listen-fd
+262:root        2690  0.0  0.0 1746984 4640 ?        Sl   15:18   0:00 /usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 8443 -container-ip 172.18.0.2 -container-port 443 -use-listen-fd
+270:jz          2887  0.0  0.0 125832 17452 ?        S<sl 15:18   0:00 /usr/bin/pipewire
+271:jz          2888  0.0  0.0 100264  5760 ?        Ssl  15:18   0:00 /usr/bin/pipewire -c filter-chain.conf
+272:jz          2891  0.2  0.1 573764 34568 ?        S<Lsl 15:18   0:16 /usr/bin/wireplumber
+273:jz          2892  0.1  0.0 136476 27184 ?        S<Lsl 15:18   0:09 /usr/bin/pipewire-pulse
+274:jz          2894  0.0  0.0 319420  9440 ?        SLsl 15:18   0:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+275:jz          2905  0.0  0.0  10608  5440 ?        Ss   15:18   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+279:jz          3009  0.0  0.0 238576  6400 tty2     Ssl+ 15:18   0:00 /usr/libexec/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+286:jz          3179  0.0  0.0   9424  4800 ?        S    15:18   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus_1
+290:jz          3229  1.4  1.4 4764376 464164 ?      Ssl  15:18   1:47 /usr/bin/gnome-shell
+296:jz          3389  0.0  0.0 2665468 27080 ?       Sl   15:18   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+298:jz          3428  0.0  0.0 391700 11568 ?        Ssl  15:18   0:02 /usr/bin/ibus-daemon --panel disable --xim
+324:jz          3697  0.0  0.0  39132 11840 ?        Ss   15:18   0:00 /snap/snapd-desktop-integration/343/usr/bin/snapd-desktop-integration
+326:jz          3798  0.0  0.3 692756 116144 ?       Sl   15:18   0:00 /snap/snapd-desktop-integration/343/usr/bin/snapd-desktop-integration
+330:jz          3868  0.0  0.0 2673720 26484 ?       Sl   15:18   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+344:998         4143  0.0  0.0 1844124 11520 ?       Ssl  15:18   0:00 /opt/gitlab/embedded/bin/gitaly-wrapper /opt/gitlab/embedded/bin/gitaly serve /var/opt/gitlab/gitaly/config.toml
+348:997         4162  0.1  0.0 149276 13820 ?        Ssl  15:18   0:12 /opt/gitlab/embedded/bin/redis-server unixsocket:/var/opt/gitlab/redis/redis.socket
+349:998         4241  0.1  0.9 3467468 307040 ?      Sl   15:18   0:08 /opt/gitlab/embedded/bin/gitaly serve /var/opt/gitlab/gitaly/config.toml
+352:gnome-r+    4361  0.0  0.1 339620 47200 ?        Ss   15:18   0:00 /opt/gitlab/embedded/bin/postgres -D /var/opt/gitlab/postgresql/data
+358:root        4397  0.0  0.0   7344  3520 ?        S    15:18   0:00 /bin/bash /opt/gitlab/bin/gitlab-ctl tail
+359:root        4398  0.0  0.1 145036 47520 ?        S    15:18   0:00 /opt/gitlab/embedded/bin/ruby /opt/gitlab/embedded/bin/omnibus-ctl gitlab /opt/gitlab/embedded/service/omnibus-ctl* tail
+374:998         4416  0.0  0.1 176744 65280 ?        Ssl  15:18   0:00 ruby /opt/gitlab/embedded/service/gitlab-rails/bin/sidekiq-cluster -e production -r /opt/gitlab/embedded/service/gitlab-rails -c 20 --timeout 25 *
+383:998         4426  0.0  0.1 2501624 59836 ?       Ssl  15:18   0:01 /opt/gitlab/embedded/bin/gitlab-workhorse -listenNetwork unix -listenUmask 0 -listenAddr /var/opt/gitlab/gitlab-workhorse/sockets/socket -authBackend http://localhost:8080 -authSocket /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket -documentRoot /opt/gitlab/embedded/service/gitlab-rails/public -pprofListenAddr  -prometheusListenAddr localhost:9229 -secretPath /opt/gitlab/embedded/service/gitlab-rails/.gitlab_workhorse_secret -logFormat json -config config.toml
+384:992         4427  0.3  0.9 4035096 305288 ?      Ssl  15:18   0:27 /opt/gitlab/embedded/bin/prometheus --web.listen-address=localhost:9090 --storage.tsdb.path=/var/opt/gitlab/prometheus/data --config.file=/var/opt/gitlab/prometheus/prometheus.yml
+386:gnome-r+    4429  0.3  0.0 2986896 31192 ?       Ssl  15:18   0:25 /opt/gitlab/embedded/bin/postgres_exporter --no-collector.stat_user_tables --collector.postmaster --web.listen-address=localhost:9187 --extend.query-path=/var/opt/gitlab/postgres-exporter/queries.yaml
+387:998         4430  0.0  0.2 7375324 95588 ?       Ssl  15:18   0:05 /opt/gitlab/embedded/bin/gitlab-kas --configuration-file /var/opt/gitlab/gitlab-kas/gitlab-kas-config.yml
+388:992         4431  0.0  0.1 2320620 37036 ?       Ssl  15:18   0:04 /opt/gitlab/embedded/bin/alertmanager --web.listen-address=localhost:9093 --storage.path=/var/opt/gitlab/alertmanager/data --config.file=/var/opt/gitlab/alertmanager/alertmanager.yml
+391:997         4435  0.1  0.0 2754884 18232 ?       Ssl  15:18   0:10 /opt/gitlab/embedded/bin/redis_exporter --web.listen-address=localhost:9121 --redis.addr=unix:///var/opt/gitlab/redis/redis.socket
+392:998         4437  0.1  0.2 186080 67992 ?        Ssl  15:18   0:12 /opt/gitlab/embedded/bin/ruby /opt/gitlab/embedded/bin/gitlab-exporter web -c /var/opt/gitlab/gitlab-exporter/gitlab-exporter.yml
+455:jz          5277  0.0  0.1 607632 34640 ?        Sl   15:19   0:00 /usr/bin/update-notifier
+538:root       22077  0.0  0.0   2800  1760 ?        Ss   17:18   0:00 /bin/sh /opt/gitlab/embedded/bin/gitlab-logrotate-wrapper
+555:jz         22896  0.0  0.0  12684  8800 pts/1    Ss+  17:19   0:00 /usr/bin/bash --init-file /snap/code/220/usr/share/code/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+ 2024  cd randdir/
+ 2025  touch processes.txt
+ 2026  ps aux > processes.txt 
+ 2027  cp processes.txt copy.txt
+ 2028  ls
+ 2029  man wc
+ 2030  wc -l > selected.txt
+ 2031  rm selected.txt 
+ 2032  wc -l processes.txt > selected.txt
+ 2033  cat selected.txt 
+ 2034  grep -n processes.txt "/bin"
+ 2035  grep -n "/bin" processes.txt 
+ 2036  grep -n "/bin" processes.txt >> selected.txt 
+ 2037  history
+ 2038  history | tail -n15 > commands.txt
